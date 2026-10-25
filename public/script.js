@@ -233,6 +233,7 @@
     var ans = el('p', null, x[1]); ans.id = 'a' + i;
     it.appendChild(btn); it.appendChild(ans); $('qa').appendChild(it);
     btn.addEventListener('click', function () { openFaq(it.classList.contains('open') ? -1 : i); });
+    ans.addEventListener('click', function () { openFaq(-1); });
     items.push({ it: it, btn: btn, ans: ans });
   });
   function openFaq(k) { items.forEach(function (x, i) { var o = i === k; x.it.classList.toggle('open', o); x.btn.setAttribute('aria-expanded', o ? 'true' : 'false'); x.ans.hidden = !o; }); }

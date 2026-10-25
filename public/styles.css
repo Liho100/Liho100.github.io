@@ -6,6 +6,7 @@
   --f-text:'Geologica',system-ui,-apple-system,sans-serif;
 }
 *{box-sizing:border-box}
+[hidden]{display:none!important}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-text);font-size:16px;line-height:1.55}
 a:focus-visible,button:focus-visible{outline:3px solid var(--pink);outline-offset:3px}
@@ -66,7 +67,9 @@ p,li,.txt,.d,.lead{text-wrap:pretty}
   .btn.loud:hover{box-shadow:9px 9px 0 var(--ink)}
   .dark .btn.loud:hover{box-shadow:9px 9px 0 var(--card)}
 }
-.node:not(:disabled):active,.qa .it:active,.btn:active,.many:active{translate:2px 2px}
+/* нажатие без сдвига: если элемент уезжает из-под курсора, клик не засчитывается */
+.node:not(:disabled):active,.qa .it:active,.btn:active,.many:active{box-shadow:2px 2px 0 var(--ink)}
+.qa p{cursor:pointer}
 .node.hint{animation:nudge .5s ease var(--hd,0s) 2}
 @keyframes nudge{50%{translate:0 -6px}}
 
