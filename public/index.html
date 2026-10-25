@@ -15,14 +15,14 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="favicon.svg?v=1" type="image/svg+xml">
-<link rel="icon" href="favicon-32.png?v=1" sizes="32x32" type="image/png">
-<link rel="apple-touch-icon" href="apple-touch-icon.png?v=1">
+<link rel="icon" href="favicon.svg?v=2" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png?v=2" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">
 <meta name="theme-color" content="#12183A">
 <link rel="preload" href="fonts/alumnisans-cyrillic-0.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/geologica-cyrillic-2.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="fonts/fonts.css?v=1">
-<link rel="stylesheet" href="styles.css?v=1">
+<link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
 
@@ -30,13 +30,34 @@
   <div class="in">
     <div class="t">
       <span class="name">Настя Лиходиевская</span>
-      <h1><span class="thin">что внутри</span><span class="big">запроса?</span></h1>
+      <h1><span class="thin">помогаю найти</span><span class="big">свой маршрут</span></h1>
+      <p class="sub">Карьерный психолог и коуч для тех, кто работает в найме. Поиск работы, рост, смена сферы, выгорание и вопрос «а чего я вообще хочу». Встречи онлайн.</p>
+      <ul class="tags" aria-label="Опыт"><li>HR с 2016 года</li><li>коуч с 2018</li><li>психолог с 2020</li></ul>
+      <div class="acts start">
+        <a class="btn loud pink" href="https://t.me/liho100" target="_blank" rel="noopener">Записаться на знакомство</a>
+        <a class="btn loud light" href="#quiz" id="quizJump">Что внутри вашего запроса?</a>
+      </div>
+      <span class="note">знакомство бесплатно, 15-20 минут</span>
     </div>
-    <p>Три шага вниз по маршруту: ваша фраза, то, что может за ней стоять, и пересборка в то, с чем мы будем работать.</p>
+    <div class="me">
+      <span class="plane" aria-hidden="true"></span>
+      <img src="img/hero.jpg?v=1" alt="Настя Лиходиевская улыбается, подперев щёку рукой" width="600" height="800">
+      <span class="sq" aria-hidden="true" style="left:4%;top:18%;width:22px;height:22px;background:#FFD23F"></span>
+      <span class="sq" aria-hidden="true" style="right:6%;bottom:22%;width:16px;height:16px;background:#FF5FA8"></span>
+    </div>
   </div>
 </header>
 
 <main>
+  <section class="quiz" id="quiz" aria-labelledby="quizTitle">
+    <div class="qhead">
+      <h2 id="quizTitle"><span class="thin">что внутри</span><span class="big">запроса?</span></h2>
+      <div class="qside">
+        <p>Мини-тест на минуту. Три шага вниз по маршруту: ваша фраза, то, что может за ней стоять, и пересборка в то, с чем мы будем работать.</p>
+        <button type="button" class="btn loud yellow" id="quizBtn" aria-expanded="false" aria-controls="quizBody"><span class="mark" aria-hidden="true"></span><span id="quizBtnText">Пройти тест</span></button>
+      </div>
+    </div>
+    <div id="quizBody" hidden>
   <div class="wrap">
     <section class="flow" id="flow" aria-label="Маршрут запроса">
       <svg class="lines" aria-hidden="true" viewBox="0 0 100 880" preserveAspectRatio="none">
@@ -59,6 +80,8 @@
       </div>
     </aside>
   </div>
+    </div>
+  </section>
 
   <section id="work" class="dark">
     <svg class="deco" aria-hidden="true" viewBox="0 0 100 100" preserveAspectRatio="none"><polyline points="30,0 14,32 60,52 40,66 76,84 60,100" fill="none" stroke="#2B4BFF" stroke-width="4" vector-effect="non-scaling-stroke"></polyline></svg>
@@ -98,8 +121,8 @@
   <section id="about">
     <div class="in">
       <div class="collage">
-        <div class="ph ph1">[ваше фото]</div>
-        <div class="ph ph2">[фото в работе]</div>
+        <div class="ph ph1"><img src="img/about.jpg?v=3" alt="Настя фотографирует себя в зеркале" width="600" height="800" loading="lazy"></div>
+        <div class="ph ph2"><img src="img/work.jpg?v=1" alt="Настя задумчиво смотрит в сторону" width="500" height="500" loading="lazy"></div>
         <span class="sq" aria-hidden="true" style="left:58%;top:6%;width:22px;height:22px;background:#FF5FA8"></span>
         <span class="sq" aria-hidden="true" style="left:66%;top:12%;width:14px;height:14px;background:#FFD23F"></span>
         <span class="sq" aria-hidden="true" style="left:10%;bottom:4%;width:18px;height:18px;background:#2B4BFF"></span>
@@ -116,9 +139,9 @@
           <div>
             <span class="cap">Образование</span>
             <ul>
-              <li>Professional Coach и Executive Coach, ICU</li>
-              <li>Психолог, профпереподготовка (1770 ак. часов)</li>
-              <li>Транзактный анализ, 3-летняя программа</li>
+              <li>Professional Coach и Executive Coach, ICU</li>
+              <li>Психолог, профпереподготовка (1770 ак. часов)</li>
+              <li>Транзактный анализ, 3‑летняя программа</li>
               <li>Team Coaching, Intact Academy (Нидерланды)</li>
               <li>Product Owner, System Thinking, Scrum.ru</li>
             </ul>
@@ -126,13 +149,13 @@
           <div>
             <span class="cap">Сообщество и менторинг</span>
             <ul>
-              <li>Ментор Women in Tech по треку HR</li>
-              <li>Тренер WeMentoring с 2020 года</li>
-              <li>Трек-лидер и ведущая IT HR Meetup</li>
-              <li>Ведущая IT HR PODCAST, трек L&amp;D</li>
-              <li>Автор и ведущая подкастов «Карьерный скалодром» и «Спорим, разберёмся»</li>
-              <li>Ведущая групп программы для психологов «Путь помогающего»</li>
-              <li>Администратор IT HR сообществ</li>
+              <li>Ментор Women in Tech по треку HR</li>
+              <li>Тренер WeMentoring с 2020 года</li>
+              <li>Трек-лидер и ведущая IT HR Meetup</li>
+              <li>Ведущая IT HR PODCAST, трек L&amp;D</li>
+              <li>Автор и ведущая подкастов «Карьерный скалодром» и «Спорим, разберёмся»</li>
+              <li>Ведущая групп программы для психологов «Путь помогающего»</li>
+              <li>Администратор IT HR сообществ</li>
             </ul>
           </div>
         </div>
@@ -200,6 +223,6 @@
 
 <button type="button" class="totop" id="totop" aria-label="Наверх"><span aria-hidden="true" id="arrow"></span></button>
 
-<script src="script.js?v=1"></script>
+<script src="script.js?v=2"></script>
 </body>
 </html>

@@ -202,6 +202,21 @@
     sprites.forEach(function (sp) { io.observe(sp.host); });
   }
 
+  /* ---------- тест сворачивается ---------- */
+  var qBtn = $('quizBtn'), qBody = $('quizBody');
+  function openQuiz(open, scroll) {
+    qBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    $('quizBtnText').textContent = open ? 'Свернуть тест' : 'Пройти тест';
+    qBody.hidden = !open;
+    if (open) {
+      b1.forEach(function (b, i) { b.classList.remove('hint'); void b.offsetWidth; b.style.setProperty('--hd', (0.4 + i * 0.15) + 's'); b.classList.add('hint'); });
+      if (scroll) $('quiz').scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+    }
+  }
+  qBtn.addEventListener('click', function () { openQuiz(qBody.hidden, false); });
+  $('quizJump').addEventListener('click', function (e) { e.preventDefault(); openQuiz(true, true); });
+  if (location.hash === '#quiz') openQuiz(true, false);
+
   /* ---------- форматы ---------- */
   $('many').addEventListener('click', function () {
     var open = this.getAttribute('aria-expanded') !== 'true';
