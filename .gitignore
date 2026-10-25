@@ -1,0 +1,10 @@
+# Личное: в CLAUDE.md решения и юридический контекст, в materials исходники, макеты и шрифты ttf. В публичный репозиторий не попадают
+CLAUDE.md
+materials/
+Rebuild.dc.html
+site-likhodievskaya-handoff.md
+.claude/
+.DS_Store
+*.zip
+liho-design-system/
+liho-design-system.zip
